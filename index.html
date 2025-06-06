@@ -112,6 +112,23 @@
             top: 0;
             left: 0;
         }
+        #centralizarGrid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* ou a altura que desejar */
+            position: relative;
+        }
+        .grid-2x2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .grid-2x2 button{
+            width: 40vw;
+            height: 40vh;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +159,14 @@
             </div>
 
             <div id="conteudoHome"> <!--colocar os jogos aqui em formas de quadrados acessaveis-->
+                <div id="centralizarGrid">
+                    <div class="grid-2x2">
+                        <button id="roleta">ROLETA</button>
+                        <button>A2</button>
+                        <button>A3</button>
+                        <button>A4</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
